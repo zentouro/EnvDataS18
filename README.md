@@ -89,8 +89,8 @@ Specific readings may be assigned throughout the semester, and these will be ann
 
 - R for Data Science by Hadley Wickham, available free online at [the author's website](http://r4ds.had.co.nz/) should be your primary reference for **R**; it covers reading data into **R**, plotting with `ggplot2`, selecting and grouping data with `dplyr`, writing functions, and much more.
 - The  [free edX course](https://www.edx.org/course/data-science-r-basics-harvardx-ph125-1x-0) "R Basics" is highly encouraged. In particular, this course will be a key reference for Homework 1, which will focus on basic **R** concepts.
-- Grinstead and Snell's [Introduction to Probability](http://www.stat.yale.edu/~jtc5/251/readings/ProbabilityBook_GrinsteadSnell.pdf), and in particular chapters 1, 2, 5, and 6, may be a useful reference for probability concepts
 - Zico Kolter's [Linear Algebra Review and Reference](http://cs229.stanford.edu/section/cs229-linalg.pdf) is an excellent reference for those who have had some exposure to linear algebra but are feeling a bit rusty
+- the MIT OCW class [18.05](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/syllabus/) by  Jeremy Orloff and Jonathan Bloom is a fantastic introduction to probability and statistics, and review of their lecture slides is highly encouraged
 - An Introduction to Statistical Learning, by James et al (2013) is available for free through the Columbia library and has a comprehensive (and faily mathematical) treatment of many machine learning algorithms, going far beyond what we will cover in this course.
 
 ## Course Communication
@@ -151,11 +151,11 @@ In particular, environmental data typically varies over space and in time, and c
 - Local regression
 - Splines
 - Nearest-neighbor models
+- Spectral analysis and coherence
 - ARMA models
 
 ###  Model Selection and Checking
 
-- Failures of OLS and WLS under serial correlation or dependence
 - Residual plots
 - Quantitative (AIC, BIC, Deviance) and qualitative comparisons between models
 - Models as data-generating processes
@@ -163,7 +163,7 @@ In particular, environmental data typically varies over space and in time, and c
 - Principal components analysis (PCA)
 - Step regression
 - Ridge regression
-- LASSO
+- LASSO regression
 - "The Garden of Forking Paths" and perils of model selection
 
 ### Challenges in Environmental Data Analysis
@@ -172,4 +172,8 @@ In particular, environmental data typically varies over space and in time, and c
 - Serial correlation
 - Seasonality
 - Changepoints and trends
-- Extreme values
+- Extreme value statistics (time permitting)
+- Canonical correlation analysis (time permitting)
+- Wavelet analysis (time permitting)
+- Clustering (time permitting)
+- Classification techniques (time permitting)
