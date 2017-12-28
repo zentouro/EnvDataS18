@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+
+\usepackage[letterpaper, top=1in, bottom=1in, left=1in, right=1in]{geometry} % page
+\usepackage[english]{babel} % language
+\usepackage[utf8]{inputenc} % input
+\usepackage[section]{placeins} % floats appear in the section they were defined in
+
+\usepackage{
+  amssymb, amsmath, % for math
+  physics, % for physics notation
+  siunitx, % for SI notation
+  csquotes, % better biblatex
+  listings, % for code
+  graphicx, % for figures
+  lipsum, % for blank text
+  mathpazo, % for palatino font
+  ragged2e, % for better alignment of text
+  indentfirst, % indent the first line
+  booktabs, % for tables
+}
+
+% PACKAGE SETTINGS
+\allowdisplaybreaks % let the align environment span multiple pages
+\setlength{\RaggedRightParindent}{\parindent} % fix ragged right
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+
+% -----------------------------------------------------------------------------
+% AUTHOR AND TITLE AND TITLEPAGE
+% -----------------------------------------------------------------------------
+
+\title{Environmental Data Analysis}
+\author{Upmanu Lall}
+
+\begin{document}
+\maketitle
+\RaggedRight
+
+% -----------------------------------------------------------------------------
+% START HERE
+% -----------------------------------------------------------------------------
+
+
+\section{Course Objectives}
+
+\section{Course Outline}
+
+\section{Course Organization}
+
+
+\subsection{Course Communication}
+
+Course files will be posted on the course \texttt{GitHub} page.
+All class communication will be conducted through the Slack channel.
+Please read the article at  \url{https://www.techrepublic.com/article/slack-goes-to-college-how-it-can-improve-the-classroom-experience/} to learn why we are using Slack for communication.
+While the direct (private) messages are a great feature, please try to ask questions about course content in a public thread so that others can view and comment.
+
+\subsection{Contact Information}
+
+You can reach us at the information below:
+\begin{tabular}{l l r}
+  \toprule
+  Name & Position & UNI \\
+  \midrule
+  Upmanu Lall & Professor & ula2 \\
+  James Doss-Gollin & TA & jwd2136 \\
+  \bottomrule
+\end{tabular}
+
+However, please use Slack for all course-related communication.
+
+
+\section{Textbooks}
+
+In this course we will not use any single textbook exhaustively, but will draw from the following textbooks.
+Readings will be announced on the syllabus and in class.
+
+\begin{itemize}
+  \item Your first reference for anything related to programming, visualizing, or working with data in the R language is the R for Data Science book, available free online at \url{http://r4ds.had.co.nz/}.
+  Reference this book for questions about reading data into R, using \texttt{Rmarkdown}, filtering and cleaning data, plotting data, dealing with dates, or dealing with strings.
+
+  \item
+\end{itemize}
+
+% -----------------------------------------------------------------------------
+% END HERE
+% -----------------------------------------------------------------------------
+
+\end{document}
