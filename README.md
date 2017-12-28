@@ -71,9 +71,13 @@ Printed homework will not be accepted.
 
 ## Computing
 
+
 All computation in this course will be done in the **R** language, and in particular we will use the ["tidyverse"](https://www.tidyverse.org/) package ecosystem wherever possible.
 This is not to say that other languages or frameworks are not helpful -- we regularly other languages and other sets of packages.
 However, we feel that the wide availibility of statistical methods already implemented in **R**, the interactive `RStudio` environment, and easy-to-learn `tidyverse` packages give us the most "bang for our buck".
+
+We do not expect that students enrolling in this class have used **R** before, but those who have not -- and particularly those who have never done any computer programming before -- should expect to do some additional work in the first weeks of the semester to make up this gap.
+TA office hours (time TBD) will cover some key conecpts in **R**.
 
 The primary reference for computing in this course is the [R for Data Science](http://r4ds.had.co.nz/) textbook, freely availably online.
 The first homework assignments will cover fundamentals of computing in **R**, and it is important to do them carefully so that you do not fall behind.
