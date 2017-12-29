@@ -118,62 +118,72 @@ We will notify you through Slack whenever an assignment or reading is posted to 
 Lectures will focus on statistical methods, but tailored for common scenarios and challenges in the analysis of environmental data.
 In particular, environmental data typically varies over space and in time, and comes from processes which
 
-### Background and Review
+### Pre-Requisites
 
-- Nonlinear dynamics and the relationship between statistics and physics
+These topics are pre-requisites for the course and will _not_ be covered.
+We will post a Homework 0 prior to the first day of class so that you can assess your knowledge.
+
 - Matrix and vector algebra
 - Discrete probability distributions (particularly Bernoulli, binomial, and Poisson)
 - Continuous probability distributions (particularly normal, exponential, and uniform)
 - Sample Estimates
 - Correlation and Covariance
-- Function and Sums of Random Variables
-- Central Limit Theorem
 
-### Statistical Distributions
+### Fundamentals of Probability
 
-- Sampling from an unknown distribution
+We will spend 4-5 Lectures on these topics, which will provide us with a core background in probability and estimation:
+
+- Nonlinear dynamics and the relationship between statistics and physics
+- Functions and sums of random variables
+- Moments of a distribution
+- Bootstraps and NHST
 - Comparing two samples
-- Bootstrapping
-- Moments as summary statistics
-- Likelihood
-- Maximum likelihood
-- Fitting models with moments
-- Gaussian approximations
-- Bayes' Rule
-- Concepts of Bayesian inference
+- Likelihood functions
+- Maximum likelihood estimators
+- Moment-based estimators
+- Brief introduction to Bayesian estimation
 
-### Model Building
+### Modeling Toolbox
+
+We will attempt to distill the wealth of statistical and machine learning tools available into 5-6 lectures on the most widely used and foundational techniques.
+We will focus on both parametric and semi-parametric tools for function approximation:
 
 - Linear Regression
 - Multivariate Linear Regression
 - Generalized Linear Models
 - Kernels
 - Local regression
-- Splines
+- Splines (if time allows)
 - Nearest-neighbor models
-- Spectral analysis and coherence
-- ARMA models
 
 ###  Model Selection and Checking
 
+Real-world data analysis does not simply involve estimating one model, but rather selecting the most relevant variables and functional forms to use as well as the methods of approximation.
+We typically want to maximize our ability to fit the data while avoiding over-fitting.
+We will spend 3-4 lectures developing fundamental tools for selecting variables, comparing models, and identifying the limitations of our models:
+
 - Residual plots
-- Quantitative (AIC, BIC, Deviance) and qualitative comparisons between models
-- Models as data-generating processes
-- Posterior predictive checks and $T$-tests
+- Quantitative ($R^2$, RMSE, AIC, BIC, Deviance) and qualitative comparisons between models
 - Principal components analysis (PCA)
 - Step regression
-- Ridge regression
-- LASSO regression
-- "The Garden of Forking Paths" and perils of model selection
+- Automated variable selection (i.e. Ridge/LASSO regression)
+- Posterior predictive checks and $T$-tests
+- "The Garden of Forking Paths", overfitting, and perils of model selection
 
-### Challenges in Environmental Data Analysis
+### Special Topics in Environmental Data Analysis
 
-- Spatial correlation
-- Serial correlation
+We will almost certainly not cover every topic below, but will go through those most relevant to student interest as time allows.
+If we do not cover a particular topic but you would like to learn more about it, we will be happy to recommend relevant reading and guide you through it.
+
+- Spatial processes and variograms
+- Serial correlation, ARMA models, and spectral analysis
 - Seasonality
 - Changepoints and trends
-- Extreme value statistics (time permitting)
-- Canonical correlation analysis (time permitting)
-- Wavelet analysis (time permitting)
-- Clustering (time permitting)
-- Classification techniques (time permitting)
+- Nonstationarity
+- Extreme value statistics
+- Partial correlations and canonical correlation analysis
+- Wavelet analysis
+- Clustering and classification techniques
+- Imputation and missing data models
+- Latent variable models, HMM, NHMM, and EM
+- Censored data regression
