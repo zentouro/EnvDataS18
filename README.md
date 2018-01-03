@@ -106,7 +106,7 @@ All computation in this course will be done in the **R** language, and in partic
 This is not to say that other languages or frameworks are not helpful -- we regularly other languages and other sets of packages.
 However, we feel that the wide availibility of statistical methods already implemented in **R**, the interactive `RStudio` environment, and easy-to-learn `tidyverse` packages give us the most "bang for our buck".
 
-We do not expect that students enrolling in this class have used **R** before, but those who have not -- and particularly those who have never done any computer programming before -- should expect to do some additional work in the first weeks of the semester to make up this gap.
+We do not expect that students enrolling in this class have used **R** before.
 
 
 ## Textbooks and References
