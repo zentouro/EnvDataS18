@@ -121,6 +121,8 @@ Specific readings may be assigned throughout the semester, and these will be ann
 - An Introduction to Statistical Learning, by James et al (2013) is available for free through the Columbia library and has a comprehensive (and faily mathematical) treatment of many machine learning algorithms, going far beyond what we will cover in this course.
 - Andrew Gelman's "Data Analysis using Regression and Multilevel/Hierarchical Models" may be helpful, particularly for topics on model checking and selection, but is not required. The book website is [here](http://stat.columbia.edu/~gelman/arm/).
 
+### Data Camp
+
 The fastest and most painless way to learn **R** is through [datacamp.com](https://www.datacamp.com/).
 This is a great way to learn **R**, because it is interactive, the lessons are of a high quality, and you do not need to install **R** before you start learning.
 As part of the homeworks 1 and 2, you will be asked to:
