@@ -1,0 +1,161 @@
+\documentclass[paper=letter, fontsize=11pt]{scrartcl}
+
+% -----------------------------------------------------------------------------
+% Package Configuration -- Don't Necessarily Need to Edit
+% -----------------------------------------------------------------------------
+
+% Packages with ooptions
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel} % English language/hyphenation
+
+% Package List
+\usepackage{
+  amssymb,amsmath,amsthm, % for math
+  physics, % for physics
+	siunitx, % for SI notation
+	booktabs, % for better tables
+	cleveref, % better citations
+  graphicx, % for figures
+  sectsty, % for pdf pages
+  xspace, % for some macros
+	sectsty, % Allows customizing section commands
+  enumitem, % for enumerated lists
+}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} %
+\fancyhead{} % No page header
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+% last Package
+\usepackage{hyperref}
+\hypersetup{colorlinks}
+
+% MACROS
+\DeclareMathOperator{\normal}{\mathcal{N}}
+\DeclareMathOperator{\expectation}{\mathbb{E}}
+\DeclareMathOperator{\bernoulli}{bern}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{
+\normalfont \normalsize
+\textsc{EAEEE 4257 Environmental Data Modeling and Analysis} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Homework 0 \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Upmanu Lall} % Your name
+
+\date{\normalsize Due Monday, January 22, 2018} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+Prerequisites for this course include some exposure to probability or statistics and linear algebra.
+This homework will give you an opportunity to test your background.
+All questions have been designed so that you can solve them \emph{without using a computer}.
+
+If you need some review, you may find the following resources helpful:
+\begin{itemize}
+  \item Zico Kolter's brief review of Linear Algebra (\url{http://cs229.stanford.edu/section/cs229-linalg.pdf})
+  \item Joe Blitzstein's Harvard statistics course (\url{http://projects.iq.harvard.edu/stat110})
+\end{itemize}
+
+If you find that you are able to answer all questions easily, the first several weeks of this class may be easy for you but the subsequent material should be useful.
+If you are able to answer most questions, but need to think about some of them or look up information, you are well prepared for the class.
+If you need to look up information for most questions, you will be able to take this course but some extra self-study may be required, particularly in the first weeks.
+If you are unable to answer most of these questions, this class will be challenging for you and you should not enroll in the class without talking to me or the TA.
+
+\section*{Grading and Submission Instructions}
+
+Please turn in your answers to this course as a \texttt{.pdf} file on Courseworks using the \texttt{Assignments} tab.
+You can type your answers (for example using \LaTeX) or write clearly by hand and scan them (please make sure the scanned document is legible!)
+
+You will recieve full credit for this homework if you submit complete answers, by the due date, and following the submission instructions, regardless of how many questions you answer correctly.
+
+\section{Linear Algebra}
+
+Let us define
+\begin{equation}
+  A = \mqty[a & b \\ c & d] \qqtext{and} B= \mqty[e & f \\ g & h] \qqtext{and} \vb{x}=\mqty[k\\ \ell]
+\end{equation}
+We will also use the notation $(\cdot)^T$ to mean the transpose of $(\cdot)$.
+The transpose is sometimes written as $(\cdot)'$ but this can lead to confusion and we will avoid writing it this way.
+\begin{enumerate}
+  \item What is $A_{2, 1}$?
+  \item What is $A^T$?
+  \item What is $AB$?
+  \item What is $x^T A x$?
+  \item What is $x^T x$?
+  \item What is $x x^T$?
+\end{enumerate}
+Now let $C$ be a matrix of shape $10 \times 2$.
+\begin{enumerate}[resume]
+  \item Is $AC$ defined? If so what shape is the resulting matrix?
+  \item Is $CA$ defined? If so what shape is the resulting matrix?
+\end{enumerate}
+
+\section{Probability and Random Variables}
+
+Define $y$ and $w$ as random variables
+\begin{align}
+  y &\sim \normal\qty(\mu_y, \sigma_y) \\
+  w &\sim \normal\qty(\mu_w, \sigma_w)
+\end{align}
+where $\normal \qty(\mu, \sigma)$ denotes a normal variable with mean $\mu$ and standard deviation $\sigma$.
+\begin{enumerate}[resume]
+  \item What is the expected value of $y^2$, written $\expectation\qty[y^2]$?
+  \item If $y$ and $w$ are independent, what is the distribution of $y$ + $w$?
+\end{enumerate}
+Now let us consider a random 5-card poker hand delt from a standard 52-card deck\footnote{This is a deck with 4 suits, each of which has 13 cards: the numbers 2-10, plus the jack (J), queen (Q), king (K), and ace (A). See \url{https://en.wikipedia.org/wiki/Standard_52-card_deck}.}
+What is the probability that the 5-card hand is:
+\begin{enumerate}[resume]
+  \item A pair (two cards of the same number but different suit)
+  \item A flush\footnote{Do not exclude a royal flush} (all cards of the same suit).
+\end{enumerate}
+Also consider the following longer problems
+\begin{enumerate}[resume]
+  \item A spam filter is designed based on common words and phrases.\footnote{This would be a very primitive spam filter!}
+  Suppose that 75\% of email is spam (and so 25\% of email is not spam).
+  In 25\% of spam emails, the phrase ``congratulations'' is used, whereas this phrase is used in only 10\% of non-spam emails.
+  A new email has just arrived, which includes the word ``congratulations''.
+  What is the probability that this email is spam?
+  \item A coin is tossed repeatedly until it lands Tails for the first time.
+  Let $Y$ be the number of tosses that are required (including the final one that lands Tails).
+  If it is a fair coin (equal probability of heads or tails), what is the probability that:
+  \begin{enumerate}
+    \item $Y=1$
+    \item $Y=2$
+    \item $Y=100$ (write the expression you would solve, but do not attempt to write it as a decimal)
+  \end{enumerate}
+
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

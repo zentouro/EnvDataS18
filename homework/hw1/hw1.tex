@@ -1,0 +1,154 @@
+\documentclass[paper=letter, fontsize=11pt]{scrartcl}
+
+% -----------------------------------------------------------------------------
+% Package Configuration -- Don't Necessarily Need to Edit
+% -----------------------------------------------------------------------------
+
+% Packages with ooptions
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel} % English language/hyphenation
+
+% Package List
+\usepackage{
+  amssymb,amsmath,amsthm, % for math
+  physics, % for physics
+	siunitx, % for SI notation
+	booktabs, % for better tables
+	cleveref, % better citations
+  graphicx, % for figures
+  sectsty, % for pdf pages
+  xspace, % for some macros
+	sectsty, % Allows customizing section commands
+  enumitem, % for enumerated lists
+  listings, % for code
+}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} %
+\fancyhead{} % No page header
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+% last Package
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
+\hypersetup{colorlinks}
+
+% MACROS
+\DeclareMathOperator{\normal}{\mathcal{N}}
+\DeclareMathOperator{\expectation}{\mathbb{E}}
+\DeclareMathOperator{\bernoulli}{bern}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{
+\normalfont \normalsize
+\textsc{EAEEE 4257 Environmental Data Modeling and Analysis} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Homework 1 \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Upmanu Lall} % Your name
+
+\date{\normalsize Due Wednesday, February 7, 2018}
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	BEGIN HERE
+%----------------------------------------------------------------------------------------
+
+This homework will give you an introduction to the \texttt{R} programming language.
+We will use \texttt{R} throughout this course to access, read, plot, model, and analyze data from many different sources.
+As you are going through this assignment, please refer to Hadley Wickham's R for Data Science (free online at \url{http://r4ds.had.co.nz/}).
+
+\section{Data Camp}
+
+The fastest and easiest introduction to \texttt{R} is through Data Camp (\texttt{https://www.datacamp.com}).
+This platform presents ideas with short videos, then gives you short programming problems (1-5 lines) with interactive feedback.
+
+Content is organized into courses, and upon completing a course you can download a certificate of completion.
+You will need a paid subscription to Data Camp to access their courses.
+Please create an account (it is preferable but not required to use your Columbia e-mail).
+Once you have created an account, go through the following courses \emph{in order}:
+\begin{enumerate}
+  \item Introduction to the tidyverse: \url{https://www.datacamp.com/courses/introduction-to-the-tidyverse}
+  \item Data manipulation in R with dplyr: \url{https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial}
+  \item  Data visualization in R with ggplot2: \url{https://www.datacamp.com/courses/data-visualization-with-ggplot2-1}
+  \item Reporting with Rmarkdown: \url{https://www.datacamp.com/courses/reporting-with-r-markdown}
+\end{enumerate}
+Once you have completed these courses, you will need to submit your certificates of completion.
+To get them, go to your profile (click top right and select your name), go to the ``Completed Courses'' section, and click on the course name.
+On the right hand side is an option to download the ``Statement of Accomplishment.''
+Please submit the 4 statements of accomplishment, as \texttt{.pdf} files, corresponding the the four courses above.
+
+One feature of \texttt{R} is that there are many different ways to code the same thing, and each has its own benefits and disadvantages.
+This tutorial will get you started with one way to do things, and as you spend more time in \texttt{R} you will learn much more.
+
+\section{RMarkdown}
+
+Your second task is to install \texttt{R} and \texttt{RStudio}, and to use them to run a simple \texttt{RMarkdown} document.
+You will use \texttt{RMarkdown} for most of the work we will do later in this class, and so if you are having difficulties with installation we want to know as soon as possible so that we can address them.
+
+The following instructions come from \url{http://r4ds.had.co.nz/introduction.html#prerequisites}, which you can visit for more detail:
+\begin{enumerate}
+  \item To download R, go to CRAN, the comprehensive R archive network.
+  CRAN is composed of a set of mirror servers distributed around the world and is used to distribute R and R packages.
+  Don’t try and pick a mirror that’s close to you: instead use the cloud mirror, \url{https://cloud.r-project.org}, which automatically figures it out for you.
+  \item \texttt{RStudio} is an integrated development environment, or IDE, for \texttt{R} programming.
+  Download and install it from \url{http://www.rstudio.com/download}.
+  \texttt{RStudio} is updated a couple of times a year.
+  When a new version is available, \texttt{RStudio} will let you know.
+  It’s a good idea to upgrade regularly so you can take advantage of the latest and greatest features.
+  For this course, make sure you have \texttt{RStudio} 1.0.0 or higher.
+  \item Open \texttt{RStudio} and explore a bit. Use the commands that you have learned on Data Camp.
+  To install the packages we will need for this homework, run
+  \begin{lstlisting}[frame=single,basicstyle=\footnotesize]
+    install.packages('tidyverse')
+    install.packages(c('ggthemes', `viridis', `knitr', `rmarkdown'))
+  \end{lstlisting}
+  in the console.
+  \item Open the \texttt{template-file.Rmd} file in \texttt{RStudio}.
+  Edit your name and UNI.
+  You do not need to edit anything else.
+  Then click ``knit''.
+\end{enumerate}
+Please turn in the \texttt{.Rmd} file with your edits and the \texttt{.html} file generated by knitting your document.
+
+\section*{Summary}
+
+The things you need to turn in as part of this assignment are:
+\begin{enumerate}
+  \item 4 statements of accomplishment from Data Camp, as \texttt{.pdf} files
+  \item Your modified \texttt{template-file.Rmd} file
+  \item The \texttt{template-file.html} file generated by knitting the \texttt{.Rmd} file
+\end{enumerate}
+If you have difficulty with this homework, particularly with using the Data Camp website or installing \texttt{R} and the required packages, please use the \texttt{r-computing} channel on the Slack page.
+It's likely that someone else has had or will have the same problem, so check if it has already been answered.
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

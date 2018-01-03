@@ -1,0 +1,73 @@
+---
+title: "EAEEE 4257: Homework 1"
+author: "YOUR NAME HERE (YOUR UNI HERE)"
+date: "`r Sys.Date()`"
+output:
+  rmdformats::html_docco:
+    highlight: kate
+---
+
+Your task here is to convert this `.Rmd` document into a `.html` file.
+To do so, you will need to install **R** and `RStudio`.
+The [R4DS Book](http://r4ds.had.co.nz/introduction.html#prerequisites) has good instructions.
+
+1. To download R, go to CRAN, the comprehensive R archive network. CRAN is composed of a set of mirror servers distributed around the world and is used to distribute R and R packages. Don’t try and pick a mirror that’s close to you: instead use the cloud mirror, https://cloud.r-project.org, which automatically figures it out for you.
+2. RStudio is an integrated development environment, or IDE, for R programming. Download and install it from http://www.rstudio.com/download. RStudio is updated a couple of times a year. When a new version is available, RStudio will let you know. It’s a good idea to upgrade regularly so you can take advantage of the latest and greatest features. For this course, make sure you have RStudio 1.0.0 or higher.
+
+Next you need to install a few packages.
+Run
+
+```{r, eval=FALSE}
+install.packages('tidyverse')
+install.packages('ggthemes')
+install.packages('viridis')
+```
+
+Please edit this file to include your name and your UNI in the `author` block at the top of this page.
+Finally
+
+```{r knitr_init, echo=FALSE, cache=FALSE}
+# DO NOT edit this block
+library(knitr)
+library(rmdformats)
+opts_chunk$set(
+  echo=TRUE,
+  cache=TRUE,
+  prompt=FALSE,
+  tidy=TRUE,
+  comment=NA,
+  message=FALSE,
+  warning=FALSE,
+  fig.width=12,
+  fig.height=7
+)
+```
+
+Load in `tidyverse`
+
+```{r}
+require(tidyverse)
+require(viridis)
+```
+
+Get the `mtcars` data=
+
+```{r}
+data(mtcars)
+mtcars %>% glimpse()
+```
+
+Make a plot of the data
+
+```{r}
+mtcars %>%
+  ggplot(aes(x = hp, y = mpg)) +
+  geom_point(aes(color=disp)) +
+  scale_color_viridis() +
+  facet_wrap('cyl') +
+  labs(x = "Car Horsepower", 
+       y = "Car Miles per Gallon",
+       color = "Disp",
+       title = "Car Horsepower and MPG for 3 Engine Configurations")
+```
+
