@@ -195,7 +195,7 @@ If we do not cover a particular topic but you would like to learn more about it,
 The approximate schedule follows, but may change over the course of the semester.
 
 .Approximate Course Schedule, 15% each column
-[width="60%", options="header"]
+[width="60%", options="header",cols="4"]
 |======
 *Lecture*|*Date*|*Assignments*|*Theme*
 1|Wednesday, January 17, 2018| |Course outline & motivation
@@ -228,8 +228,8 @@ The approximate schedule follows, but may change over the course of the semester
 28|Monday, April 23, 2018| |Special topics
 29|Wednesday, April 25, 2018| |Special topics
 30|Monday, April 30, 2018|Final project due| Special topics
- |Final exam period (TBD)|Final project presentation| NA
- |5/11/18|Take-home final exam due| NA
+- |Final exam period (TBD)|Final project presentation| NA
+- |5/11/18|Take-home final exam due| NA
 |======
 
  ## Textbooks and References
