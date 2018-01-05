@@ -195,42 +195,42 @@ If we do not cover a particular topic but you would like to learn more about it,
 The approximate schedule follows, but may change over the course of the semester.
 
 .Approximate Course Schedule, 15% each column
-[width="60%", options="header",cols="4"]
+[width="60%", options="header",cols="4", format="csv"]
 | ======
-*Lecture* | *Date* | *Assignments* | *Theme*
-1 | Wednesday, January 17, 2018 |   | Course outline & motivation
-2 | Monday, January 22, 2018 | HW0 due | Fundamentals of probability
-3 | Wednesday, January 24, 2018 |   | Fundamentals of probability
-4 | Monday, January 29, 2018 |   | Fundamentals of probability
-5 | Wednesday, January 31, 2018 |   | Fundamentals of probability
-6 | Monday, February 5, 2018 |   | Modeling toolbox
-7 | Wednesday, February 7, 2018 | HW1 due | Modeling toolbox
-8 | Monday, February 12, 2018 |   | Modeling toolbox
-9 | Wednesday, February 14, 2018 |   | Modeling toolbox
-10 | Monday, February 19, 2018 |   | Modeling toolbox
-11 | Wednesday, February 21, 2018 | HW2 due | Modeling toolbox
-12 | Monday, February 26, 2018 |   | Model checking & selection
-13 | Wednesday, February 28, 2018 |   | Model checking & selection
-14 | Monday, March 5, 2018 |   | Model checking & selection
-15 | Wednesday, March 7, 2018 | HW3 due | Model checking & selection
-16 | Monday, March 12, 2018 |   | SPRING BREAK
-17 | Wednesday, March 14, 2018 |   | SPRING BREAK
-18 | Monday, March 19, 2018 |   | Model checking & selection
-19 | Wednesday, March 21, 2018 |   | Model checking & selection
-20 | Monday, March 26, 2018 |   | Special topics
-21 | Wednesday, March 28, 2018 | HW4 due | Special topics
-22 | Monday, April 2, 2018 |   | Special topics
-23 | Wednesday, April 4, 2018 |   | Special topics
-24 | Monday, April 9, 2018 |   | Special topics
-25 | Wednesday, April 11, 2018 | HW5 due | Special topics
-26 | Monday, April 16, 2018 |   | Special topics
-27 | Wednesday, April 18, 2018 |   | Special topics
-28 | Monday, April 23, 2018 |   | Special topics
-29 | Wednesday, April 25, 2018 |   | Special topics
-30 | Monday, April 30, 2018 | Final project due |  Special topics
--  | Final exam period (TBD) | Final project presentation |  NA
--  | 5/11/18 | Take-home final exam due |  NA
-| ======
+*Lecture*,*Date*,*Assignments*,*Theme*
+1, Wednesday January 17 2018, ,Course outline & motivation
+2,Monday January 22 2018,HW0 due,Fundamentals of probability
+3,Wednesday January 24 2018, ,Fundamentals of probability
+4,Monday January 29 2018, ,Fundamentals of probability
+5,Wednesday January 31, 2018, ,Fundamentals of probability
+6,Monday February 5 2018, ,Modeling toolbox
+7,Wednesday February 7 2018,HW1 due,Modeling toolbox
+8,Monday February 12 2018, ,Modeling toolbox
+9,Wednesday February 14 2018, ,Modeling toolbox
+10,Monday February 19 2018, ,Modeling toolbox
+11,Wednesday February 21 2018,HW2 due,Modeling toolbox
+12,Monday February 26 2018, ,Model checking & selection
+13,Wednesday February 28 2018, ,Model checking & selection
+14,Monday March 5 2018, ,Model checking & selection
+15,Wednesday March 7 2018,HW3 due,Model checking & selection
+16,Monday March 12 2018, ,SPRING BREAK
+17,Wednesday March 14 2018, ,SPRING BREAK
+18,Monday March 19 2018, ,Model checking & selection
+19,Wednesday March 21 2018, ,Model checking & selection
+20,Monday March 26 2018, ,Special topics
+21,Wednesday March 28 2018,HW4 due,Special topics
+22,Monday April 2 2018, ,Special topics
+23,Wednesday April 4 2018, ,Special topics
+24,Monday April 9 2018, ,Special topics
+25,Wednesday April 11 2018,HW5 due,Special topics
+26,Monday April 16 2018, ,Special topics
+27,Wednesday April 18 2018, ,Special topics
+28,Monday April 23 2018, ,Special topics
+29,Wednesday April 25 2018, ,Special topics
+30,Monday April 30 2018,Final project due, Special topics
+,Final exam period (TBD),Final project presentation, NA
+,5/11/18,Take-home final exam due, NA
+|======
 
  ## Textbooks and References
 
