@@ -231,7 +231,7 @@ Lecture,Date,Assignments,Theme
 30,Monday April 30 2018,Final project due, Special topics
  ,Final exam period (TBD),Final project presentation,
  ,5/11/18,Take-home final exam due,
-,======
+|======
 
 ## Textbooks and References
 
