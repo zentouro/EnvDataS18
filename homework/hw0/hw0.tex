@@ -23,7 +23,7 @@
   enumitem, % for enumerated lists
 }
 
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[section]{placeins}
 
 \allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
 
@@ -82,14 +82,12 @@ All questions have been designed so that you can solve them \emph{without using 
 
 If you need some review, you may find the following resources helpful:
 \begin{itemize}
-  \item Zico Kolter's brief review of Linear Algebra (\url{http://cs229.stanford.edu/section/cs229-linalg.pdf})
-  \item Joe Blitzstein's Harvard statistics course (\url{http://projects.iq.harvard.edu/stat110})
+  \item Zico Kolter's brief review of Linear Algebra (\url{http://cs229.stanford.edu/section/cs229-linalg.pdf}) is useful for anyone who has seen linear algebra but needs some review
+  \item Joe Blitzstein's Harvard course (\url{http://projects.iq.harvard.edu/stat110}) has lecture notes and practice problems for an in-depth look at introductory probability
+  \item Naresh Devineni's Data Analysis classroom blog (\url{http://www.dataanalysisclassroom.com/}) has short lessons (blog posts) on a variety of topics related to statistics and data analysis. It's recommended to start from the beginning.
 \end{itemize}
 
-If you find that you are able to answer all questions easily, the first several weeks of this class may be easy for you but the subsequent material should be useful.
-If you are able to answer most questions, but need to think about some of them or look up information, you are well prepared for the class.
-If you need to look up information for most questions, you will be able to take this course but some extra self-study may be required, particularly in the first weeks.
-If you are unable to answer most of these questions, this class will be challenging for you and you should not enroll in the class without talking to me or the TA.
+Although you will be allowed to work in groups for some later homeworks, \textbf{work alone for this assignment}.
 
 \section*{Grading and Submission Instructions}
 
@@ -97,6 +95,27 @@ Please turn in your answers to this course as a \texttt{.pdf} file on Coursework
 You can type your answers (for example using \LaTeX) or write clearly by hand and scan them (please make sure the scanned document is legible!)
 
 You will recieve full credit for this homework if you submit complete answers, by the due date, and following the submission instructions, regardless of how many questions you answer correctly.
+
+The purpose of this assignment is for you to evaluate whether this class is a good fit for you.
+Use the following rubric:
+\begin{itemize}
+  \item If you find that you are able to answer all questions easily, the first several weeks of this class may be easy for you.
+  \item If you are able to answer most questions, but need to look up some material and/or have some questions that you are unable to answer, you are well-prepared for this class.
+  \item If you are able to answer some of the questions easily, need to look up information for some others, and ar eunable to answer some questions, this class is a good fit for you but some self-study may be helpful during the first weeks.
+  \item If you are unable to answer most or all of these questions, this class will be challenging for you and you should not enroll without talking to me or the TA.
+\end{itemize}
+
+\section{Open-Ended}
+\begin{enumerate}
+  \item Have you ever taken a linear algebra course before? If so, what course?
+  \item Have you ever taken a probability course before? If so, what course?
+  \item Have you ever taken a statistics course before? If so, what course?
+  \item Have you ever taken a multi-variate calculus before? If so, what course?
+  \item Have you ever written computer code before? If so, when and what language?
+  \item Have you ever used \texttt{R} before? What is your level of experience?
+  \item Why are you taking this course? What do you hope to learn?
+  \item A key component of this course is a final project, in which you will use the tools you learn in this class to analyze a data set of interest to you. Do you have any idea yet what you would like to do for your final project?
+\end{enumerate}
 
 \section{Linear Algebra}
 
@@ -106,7 +125,7 @@ Let us define
 \end{equation}
 We will also use the notation $(\cdot)^T$ to mean the transpose of $(\cdot)$.
 The transpose is sometimes written as $(\cdot)'$ but this can lead to confusion and we will avoid writing it this way.
-\begin{enumerate}
+\begin{enumerate}[resume]
   \item What is $A_{2, 1}$?
   \item What is $A^T$?
   \item What is $AB$?
@@ -155,6 +174,132 @@ Also consider the following longer problems
   \end{enumerate}
 
 \end{enumerate}
+
+\section{Statistics and Data Analysis}
+
+The following question is more open-ended than the previous questions.
+Please note that we do not expect everyone who enrolls in the course to be able to answer all of these questions.
+Please answer to the best of your abilities and be as clear as possible about any assumptions you have made.
+If there are questions that you don't know how to answer, please indicate that.
+If you would like to use a computer or calculator for this problem, you  may do so but please indicate on your answer that you used a computer or calculator (you will not be penalized!)
+
+Water quality data has been collected at a lake for several years.
+Answer the following questions given the data in Table~\ref{tab:lake-data}:
+\begin{table}[h]
+  \centering
+  \begin{tabular}{l l l}
+    \toprule
+    Event & DO [\si{\milli\gram\per\liter}] & Dead Fish Present \\
+    \midrule
+    1 & 7 & Y \\
+    2 & 6 & N \\
+    3 & 9 & Y \\
+    4 & 11 & N \\
+    5 & 120 & N \\
+    6 & 11 & N \\
+    7 & 9 & N \\
+    8 & 7 & N \\
+    9 & 5 & Y \\
+    10 & 9 & N \\
+    \bottomrule
+  \end{tabular}
+  \caption{Lake water quality data \label{tab:lake-data}}
+\end{table}
+
+
+\begin{enumerate}[resume]
+  \item What are the average  and the median of the Dissolved Oxygen (DO) concentration?
+  \item If one of the observations (which one?) is likely to be a typographical error, which estimate, median or average do you think is more typical of the data? Why?
+  \item What is the standard deviation of the DO concentration? How does it change if you skip the observation that may be wrong? What do you learn from this?
+  \item Based on just the data, what do you think is the chance (probability) that DO can be below \SI{8}{\milli\gram\per\liter} -- the level that is critical for the fish in the lake?
+  \item What is the chance that you can have 2 consecutive events with $\text{DO}<\SI{8}{\milli\gram\per\liter}$?
+  \item What is the chance that in 10 events you will have exactly 2 events with $\text{DO}<\SI{8}{\milli\gram\per\liter}$?
+  \item What is the chance that in 10 events you will have at least 1 event with $\text{DO}<\SI{8}{\milli\gram\per\liter}$?\
+  \item What did you assume about the data in the calculations above? Can you name the process or probability distribution you used?
+  \item A new data set was collected by a citizen group.
+  This data is shown in Table~\ref{tab:lake-data-citizen}.
+  Unfortunately they did not report the actual DO values because their sensor can only report whether the value is above or below \SI{8}{\milli\gram\per\liter}.
+  Based on what you estimated above about the probability or likelihood of new data, is this sample consistent with the data that was collected previously?
+  Specifically what is the chance that 4 out of 5 events are Y ($\text{DO}<\SI{8}{\milli\gram\per\liter}$)?
+  Discuss how you approached the problem.
+  Note that you can think of this as 4 Y in a row followed by a N, or as 4 Y out of 5.
+  What is the difference? Which one did you choose?
+\end{enumerate}
+\begin{table}[h]
+  \centering
+  \begin{tabular}{l l l}
+    \toprule
+    Event & $\text{DO}<\SI{8}{\milli\gram\per\liter}$ \\
+    \midrule
+    1 & Y \\
+    2 & Y \\
+    3 & Y \\
+    4 & Y \\
+    5 & N \\
+    \bottomrule
+  \end{tabular}
+  \caption{Lake water quality data collected by citizen scientists \label{tab:lake-data-citizen}}
+\end{table}
+\begin{enumerate}[resume]
+  \item Now let us say that you wanted to use the Normal distribution to fit the original DO data.
+  This distribution has 2 parameters: mean and standard deviation.
+  Discuss which values you would use for this data, and then use the Normal distribution to compute the probability that $\text{DO}<\SI{8}{\milli\gram\per\liter}$.
+  \item Do you think it is a good idea to use the Normal distribution with this data?
+  Why or why not?
+  Would you take logs of the data first?
+  If you say yes, then use that procedure to estimate the probability that $\text{DO}<\SI{8}{\milli\gram\per\liter}$ from that data.
+  Which one agrees better with your original analysis?
+  How would you test whether the Normal distribution applied to the original data or to the logs of the data is a better choice in this case?
+  You don’t need to actually do the test, just name it and discuss its application.
+  \item In Table~\ref{tab:lake-data} we see that whether or not dead fish were found was also recorded for each event.
+  What is the probability or chance of finding dead fish in the lake? What is the probability of finding dead fish if $\text{DO}<\SI{8}{\milli\gram\per\liter}$?
+  What is the probability of finding dead fish if $\text{DO}>\SI{8}{\milli\gram\per\liter}$?
+  \item Now let us introduce some notation: let
+  \begin{equation}
+    y_i = \begin{cases}1 & \text{if dead fish found} \\ 0 & \text{else} \end{cases}
+  \end{equation}
+  and
+  \begin{equation}
+    x_i = \begin{cases}1 & \text{if DO}<\SI{8}{\milli\gram\per\liter}\\ 0 & \text{else} \end{cases}
+  \end{equation}
+  Now if we are interested in the joint probability $P\qty(y=1,y=1)$ we could estimate this as all the events were estimated and $\text{DO}<\SI{8}{\milli\gram\per\liter}$, divided by the total number events -- similarly for the other joint probabilities.
+  Looking at Table~\ref{tab:lake-data}, we would estimate $P(y=1,x=1)=\frac{2}{10}$.
+  What are:
+  \begin{enumerate}
+    \item $P(y=1,x=0)$?
+    \item $P(y=0, x=1)$?
+    \item $P(y=0, x=0)$?
+  \end{enumerate}
+  Now define $P(y=1 | x=1)$ as the conditional probability that $y=1$ if we observe that $x=1$.
+  Events 1, 2, 8, and 9 correspond to $x=1$.
+  So we have 4 observations that $x=1$, of which 2 have $y=1$.
+  Thus $P(y=1 | x=1) = \frac{2}{4} = \frac{1}{2}$.
+  What are all the other conditional probabilities that we can estimate?
+  Please estimate them.
+
+  Now that you have estimated these conditional probabilities, what is the probability that $\text{DO}<\SI{8}{\milli\gram\per\liter}$ if a couple taking a walk spotted a dead fish?
+  How did you compute this?
+  Suppose that you had been given only the joint probabilities that you computed, and also the marginal probabilities $P(x=1)$ and $P(y=1)$: could you compute $P(x=1 | y=1)$?
+  Lay out your argument and if you decided to apply Bayes rule, explain what you did in plain English.
+\end{enumerate}
+
+\section{Slack and Syllabus}
+
+\begin{enumerate}[resume]
+  \item Please confirm that you have joined the Slack page
+  \item Please confirm that you have joined the \texttt{math-stats} and \texttt{r-computing} channels on the Slack channel (you may need to join them manually)
+  \item Please confirm that you have read the syllabus at \url{https://github.com/jdossgollin/EnvDataS18/}.
+  \emph{Please note that that the syllabus may be updated before the beginning of class}.
+  \item Read the academic honesty policy at \url{http://www.cs.columbia.edu/education/honesty/} and confirm that you have read it.
+  If you have any questions about the academic honor policy in this course, please write them here so that we can clarify.
+  Please write the following:
+  \begin{quotation}
+    I, \texttt{Your Name}, will abide by the academic honesty policy presented above and on the course syllabus.
+    If I have any questions about the academic honesty policy I will discuss them with the professor or TA.
+  \end{quotation}
+\end{enumerate}
+
+
 
 %----------------------------------------------------------------------------------------
 

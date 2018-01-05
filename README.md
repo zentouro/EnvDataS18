@@ -120,6 +120,22 @@ Specific readings may be assigned throughout the semester, and these will be ann
 - the MIT OCW class [18.05](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/syllabus/) by  Jeremy Orloff and Jonathan Bloom is a fantastic introduction to probability and statistics, and review of their lecture slides is highly encouraged
 - An Introduction to Statistical Learning, by James et al (2013) is available for free through the Columbia library and has a comprehensive (and faily mathematical) treatment of many machine learning algorithms, going far beyond what we will cover in this course.
 - Andrew Gelman's "Data Analysis using Regression and Multilevel/Hierarchical Models" may be helpful, particularly for topics on model checking and selection, but is not required. The book website is [here](http://stat.columbia.edu/~gelman/arm/).
+- Helsel, D.R. and R. M. Hirsch, 2002. Statistical Methods in Water Resources Techniques of Water Resources Investigations, Book 4, chapter A3. U.S. Geological Survey. 522 pages. Freely available at [https://pubs.usgs.gov/twri/twri4a3/](https://pubs.usgs.gov/twri/twri4a3/). This book is a very traditional approach to statistical analysis of hydrologic timre series.
+
+Another good way to build your skills in **R**, data science, and statistics is to follow good blogs and potentially twitter feeds.
+There are also online web communities for beginning programmers, statistitians, and for more advanced debugging of computer issues.
+Some resources that may be particularly worth checking out are:
+
+- The [RStudio Community Page](https://community.rstudio.com/) has great information on getting started using **R**.
+- If you search for **R** problems online, you will almost certainly come across [Stack Overflow](https://stackoverflow.com/) or [Stack Exchange](https://stackexchange.com/). These are great resources but _please be careful_ posting on these sites. They take their rules very seriously and if you write a question that is not properly formatted or is a duplicate of an existing question, people will shut you down and are not friendly. I recommend posting your questions on the `r-computing` slack channel before posting on these sites. You can, however, learn a lot by browsing other peoples' questions.
+- The [blog](http://andrewgelman.com/) of Andrew Gelman, a statistics professor at Columbia, focuses on Bayesian data analysis and critiques of applied statistics. The tone can be a bit hard to follow -- you may not always be sure if he is joking -- and some of the topics are more advacned than what we will cover in this class
+- Twitter user [`@dataandme`](https://twitter.com/dataandme) searches out and retweets the best posts on data science, particularly using **R**
+- Twitter user [`@JennyBryan`](https://twitter.com/JennyBryan) is a statistics professor who posts about basic ideas around computing and statistics
+- Many people use the twitter hashtag `#rstats` to post interesting statistical analyses in **R**
+- The [r-bloggers](https://www.r-bloggers.com/) website collects blogs from over 750 different contributors who use **R** to do interesting analyses -- you can often learn a lot by reading their code and looking at their results.
+
+There are many more resources out there, but it's worth checking these out before madly googling things.
+However, if you find any other great resources, please share them on the Slack `# random` channel!
 
 ### Data Camp
 
