@@ -1,16 +1,10 @@
-:toc: macro
-:toc-title:
-:toclevels: 99
-
 # Course Syllabus: Environmental Data Analysis
 
 - Course number: EAEEE 4257
 - Instructor: Upmanu Lall (ula2)
 - TA: James Doss-Gollin (jwd2136)
-- Meetings: Monday and Wednesday 2:40pm to 3:55pm in Mudd Building Room 633
+- Meetings: Monday and Wednesday, 2:40pm to 3:55pm in Mudd Building Room 633
 - Office Hours: TBD
-
-toc::[]
 
 ## Summary
 
@@ -35,7 +29,7 @@ There are three pre-requisites for this course:
 - and some experience writing programs on a computer (in any language)
 
 If you are missing one or more of these pre-requisites but would still like to take the class, it is very much possible but may lead to some additional work, particularly during the first weeks of the semester.
-*Homework 0*, which we will post before the first class date, will cover review material and which will allow you to determine whether this class is a good fit for your needs and abilities.
+**Homework 0**, which we will post before the first class date, will cover review material and which will allow you to determine whether this class is a good fit for your needs and abilities.
 If you're not sure whether this class is a good fit for you, please contact us!
 
 ## Course Communication
@@ -47,7 +41,7 @@ Please note:
 - use the `general` channel sparingly -- we will post homework assignments and other essential logistics here
 - use the `random` channel for interesting news articles you see or cool blog posts related to the course
 - use the `math-stats` channel (you will need to join it!) for questions about probability and statistics
-- use the `r-computing` channel for questions about *R* syntax, installation, packages, etc.
+- use the `r-computing` channel for questions about **R** syntax, installation, packages, etc.
 - use direct messages only if strictly necessary!
 
 We will check the Slack page at least daily.
@@ -74,7 +68,7 @@ See also [http://barnard.edu/node/2875](http://barnard.edu/node/2875) and
 [https://www.college.columbia.edu/academics/academicintegrity](https://www.college.columbia.edu/academics/academicintegrity).
 
 Your grade will be determined by three different components:
--  Homework (50%) will contain both written and *R* data analysis elements. This is due on Courseworks at the beginning of class on the due date. Homeworks will be due approximately every two weeks.
+-  Homework (50%) will contain both written and **R** data analysis elements. This is due on Courseworks at the beginning of class on the due date. Homeworks will be due approximately every two weeks.
 - Final Exam (20%) will be given as a take-home exam during finals week.
 - Final Project (30%) will begin at the beginning of the semester, will have check-ins throughout the semester, and will be due during finals week.
 
@@ -82,7 +76,7 @@ More information on the final project and final exam will be provided later in t
 
 ### Homework
 
-Students  are  encouraged  to  work  together,  but  *homework  write-ups  must  be  done  individually and  must  be  entirely  the  author’s  own  work.*
+Students  are  encouraged  to  work  together,  but  **homework  write-ups  must  be  done  individually and  must  be  entirely  the  author’s  own  work.**
 If you're not sure what this means, please contact the TA.
 
 Homework is due at the beginning of the class for which it is due.
@@ -108,11 +102,54 @@ We will use the final exam period for student project presentations.
 
 ## Computing
 
-All computation in this course will be done in the *R* language, and in particular we will use the ["tidyverse"](https://www.tidyverse.org/) package ecosystem wherever possible.
+All computation in this course will be done in the **R** language, and in particular we will use the ["tidyverse"](https://www.tidyverse.org/) package ecosystem wherever possible.
 This is not to say that other languages or frameworks are not helpful -- we regularly other languages and other sets of packages.
-However, we feel that the wide availibility of statistical methods already implemented in *R*, the interactive `RStudio` environment, and easy-to-learn `tidyverse` packages give us the most "bang for our buck".
+However, we feel that the wide availibility of statistical methods already implemented in **R**, the interactive `RStudio` environment, and easy-to-learn `tidyverse` packages give us the most "bang for our buck".
 
-We do not expect that students enrolling in this class have used *R* before.
+We do not expect that students enrolling in this class have used **R** before.
+
+
+## Textbooks and References
+
+We will not follow a single textbook, but the following sources are helpful.
+Specific readings may be assigned throughout the semester, and these will be announced on Slack.
+
+- R for Data Science by Hadley Wickham, available free online at [the author's website](http://r4ds.had.co.nz/) should be your primary reference for **R**; it covers reading data into **R**, plotting with `ggplot2`, selecting and grouping data with `dplyr`, writing functions, and much more.
+- The [free edX course](https://www.edx.org/course/data-science-r-basics-harvardx-ph125-1x-0) "R Basics" is recommended to those who wish to gain further experience with **R**
+- Zico Kolter's [Linear Algebra Review and Reference](http://cs229.stanford.edu/section/cs229-linalg.pdf) is an excellent reference for those who have had some exposure to linear algebra but are feeling a bit rusty
+- the MIT OCW class [18.05](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/syllabus/) by  Jeremy Orloff and Jonathan Bloom is a fantastic introduction to probability and statistics, and review of their lecture slides is highly encouraged
+- An Introduction to Statistical Learning, by James et al (2013) is available for free through the Columbia library and has a comprehensive (and faily mathematical) treatment of many machine learning algorithms, going far beyond what we will cover in this course.
+- Andrew Gelman's "Data Analysis using Regression and Multilevel/Hierarchical Models" may be helpful, particularly for topics on model checking and selection, but is not required. The book website is [here](http://stat.columbia.edu/~gelman/arm/).
+- Helsel, D.R. and R. M. Hirsch, 2002. Statistical Methods in Water Resources Techniques of Water Resources Investigations, Book 4, chapter A3. U.S. Geological Survey. 522 pages. Freely available at [https://pubs.usgs.gov/twri/twri4a3/](https://pubs.usgs.gov/twri/twri4a3/). This book is a very traditional approach to statistical analysis of hydrologic timre series.
+
+Another good way to build your skills in **R**, data science, and statistics is to follow good blogs and potentially twitter feeds.
+There are also online web communities for beginning programmers, statistitians, and for more advanced debugging of computer issues.
+Some resources that may be particularly worth checking out are:
+
+- The [RStudio Community Page](https://community.rstudio.com/) has great information on getting started using **R**.
+- If you search for **R** problems online, you will almost certainly come across [Stack Overflow](https://stackoverflow.com/) or [Stack Exchange](https://stackexchange.com/). These are great resources but _please be careful_ posting on these sites. They take their rules very seriously and if you write a question that is not properly formatted or is a duplicate of an existing question, people will shut you down and are not friendly. I recommend posting your questions on the `r-computing` slack channel before posting on these sites. You can, however, learn a lot by browsing other peoples' questions.
+- The [blog](http://andrewgelman.com/) of Andrew Gelman, a statistics professor at Columbia, focuses on Bayesian data analysis and critiques of applied statistics. The tone can be a bit hard to follow -- you may not always be sure if he is joking -- and some of the topics are more advacned than what we will cover in this class
+- Twitter user [`@dataandme`](https://twitter.com/dataandme) searches out and retweets the best posts on data science, particularly using **R**
+- Twitter user [`@JennyBryan`](https://twitter.com/JennyBryan) is a statistics professor who posts about basic ideas around computing and statistics
+- Many people use the twitter hashtag `#rstats` to post interesting statistical analyses in **R**
+- The [r-bloggers](https://www.r-bloggers.com/) website collects blogs from over 750 different contributors who use **R** to do interesting analyses -- you can often learn a lot by reading their code and looking at their results.
+
+There are many more resources out there, but it's worth checking these out before madly googling things.
+However, if you find any other great resources, please share them on the Slack `# random` channel!
+
+### Data Camp
+
+The fastest and most painless way to learn **R** is through [datacamp.com](https://www.datacamp.com/).
+This is a great way to learn **R**, because it is interactive, the lessons are of a high quality, and you do not need to install **R** before you start learning.
+As part of the homeworks 1 and 2, you will be asked to:
+
+- create a _paid_ account on data camp
+- Take several online courses (will be specified)
+- Turn in the certificate of completion
+
+If you follow the directions in the homeworks assigned, you will be able to complete all requirements on DataCamp while paying only for one month of a premium subscription, which costs $25.
+We will not require you to purchase any other textbooks or materials.
+If the cost is a problem, please contact us.
 
 ## Topics
 
@@ -122,7 +159,7 @@ We will split the course into approximately 4 topics as follows:
 ### Pre-Requisites
 
 These topics are pre-requisites for the course and will _not_ be covered.
-We will post a *Homework 0* prior to the first day of class so that you can assess your knowledge.
+We will post a **Homework 0** prior to the first day of class so that you can assess your knowledge.
 
 - Matrix and vector algebra
 - Discrete probability distributions (particularly Bernoulli, binomial, and Poisson)
@@ -194,84 +231,37 @@ If we do not cover a particular topic but you would like to learn more about it,
 
 The approximate schedule follows, but may change over the course of the semester.
 
-.Approximate Course Schedule
-[format="csv",width="60%",cols="4"]
-[options="header"]
-|======
-Lecture,Date,Assignments,Theme
-1,Wednesday January 17 2018, ,Course outline & motivation
-2,Monday January 22 2018,HW0 due,Fundamentals of probability
-3,Wednesday January 24 2018, ,Fundamentals of probability
-4,Monday January 29 2018, ,Fundamentals of probability
-5,Wednesday January 31 2018, ,Fundamentals of probability
-6,Monday February 5 2018, ,Modeling toolbox
-7,Wednesday February 7 2018,HW1 due,Modeling toolbox
-8,Monday February 12 2018, ,Modeling toolbox
-9,Wednesday February 14 2018, ,Modeling toolbox
-10,Monday February 19 2018, ,Modeling toolbox
-11,Wednesday February 21 2018,HW2 due,Modeling toolbox
-12,Monday February 26 2018, ,Model checking & selection
-13,Wednesday February 28 2018, ,Model checking & selection
-14,Monday March 5 2018, ,Model checking & selection
-15,Wednesday March 7 2018,HW3 due,Model checking & selection
-16,Monday March 12 2018, ,SPRING BREAK
-17,Wednesday March 14 2018, ,SPRING BREAK
-18,Monday March 19 2018, ,Model checking & selection
-19,Wednesday March 21 2018, ,Model checking & selection
-20,Monday March 26 2018, ,Special topics
-21,Wednesday March 28 2018,HW4 due,Special topics
-22,Monday April 2 2018, ,Special topics
-23,Wednesday April 4 2018, ,Special topics
-24,Monday April 9 2018, ,Special topics
-25,Wednesday April 11 2018,HW5 due,Special topics
-26,Monday April 16 2018, ,Special topics
-27,Wednesday April 18 2018, ,Special topics
-28,Monday April 23 2018, ,Special topics
-29,Wednesday April 25 2018, ,Special topics
-30,Monday April 30 2018,Final project due, Special topics
- ,Final exam period (TBD),Final project presentation,
- ,5/11/18,Take-home final exam due,
-|======
-
-## Textbooks and References
-
-We will not follow a single textbook, but the following sources are helpful.
- Specific readings may be assigned throughout the semester, and these will be announced on Slack.
-
-- R for Data Science by Hadley Wickham, available free online at [the author's website](http://r4ds.had.co.nz/) should be your primary reference for *R*; it covers reading data into *R*, plotting with `ggplot2`, selecting and grouping data with `dplyr`, writing functions, and much more.
-- The [free edX course](https://www.edx.org/course/data-science-r-basics-harvardx-ph125-1x-0) "R Basics" is recommended to those who wish to gain further experience with *R*
-- Zico Kolter's [Linear Algebra Review and Reference](http://cs229.stanford.edu/section/cs229-linalg.pdf) is an excellent reference for those who have had some exposure to linear algebra but are feeling a bit rusty
-- the MIT OCW class [18.05](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/syllabus/) by  Jeremy Orloff and Jonathan Bloom is a fantastic introduction to probability and statistics, and review of their lecture slides is highly encouraged
-- An Introduction to Statistical Learning, by James et al (2013) is available for free through the Columbia library and has a comprehensive (and faily mathematical) treatment of many machine learning algorithms, going far beyond what we will cover in this course.
-- Andrew Gelman's "Data Analysis using Regression and Multilevel/Hierarchical Models" may be helpful, particularly for topics on model checking and selection, but is not required. The book website is [here](http://stat.columbia.edu/~gelman/arm/).
-- Helsel, D.R. and R. M. Hirsch, 2002. Statistical Methods in Water Resources Techniques of Water Resources Investigations, Book 4, chapter A3. U.S. Geological Survey. 522 pages. Freely available at [https://pubs.usgs.gov/twri/twri4a3/](https://pubs.usgs.gov/twri/twri4a3/). This book is a very traditional approach to statistical analysis of hydrologic timre series.
-
-Another good way to build your skills in *R*, data science, and statistics is to follow good blogs and potentially twitter feeds.
-There are also online web communities for beginning programmers, statistitians, and for more advanced debugging of computer issues.
-Some resources that may be particularly worth checking out are:
-
-- The [RStudio Community Page](https://community.rstudio.com/) has great information on getting started using *R*.
-- If you search for *R* problems online, you will almost certainly come across [Stack Overflow](https://stackoverflow.com/) or [Stack Exchange](https://stackexchange.com/). These are great resources but _please be careful_ posting on these sites. They take their rules very seriously and if you write a question that is not properly formatted or is a duplicate of an existing question, people will shut you down and are not friendly. I recommend posting your questions on the `r-computing` slack channel before posting on these sites. You can, however, learn a lot by browsing other peoples' questions.
-- The [blog](http://andrewgelman.com/) of Andrew Gelman, a statistics professor at Columbia, focuses on Bayesian data analysis and critiques of applied statistics. The tone can be a bit hard to follow -- you may not always be sure if he is joking -- and some of the topics are more advacned than what we will cover in this class
-- Twitter user [`@dataandme`](https://twitter.com/dataandme) searches out and retweets the best posts on data science, particularly using *R*
-- Twitter user [`@JennyBryan`](https://twitter.com/JennyBryan) is a statistics professor who posts about basic ideas around computing and statistics
-- Many people use the twitter hashtag `#rstats` to post interesting statistical analyses in *R*
-- The [r-bloggers](https://www.r-bloggers.com/) website collects blogs from over 750 different contributors who use *R* to do interesting analyses -- you can often learn a lot by reading their code and looking at their results.
-- Ryan Abernathey's [course page](https://rabernat.github.io/research_computing/)
-
-There are many more resources out there, but it's worth checking these out before madly googling things.
-However, if you find any other great resources, please share them on the Slack `# random` channel!
-
-### Data Camp
-
-The fastest and most painless way to learn *R* is through [datacamp.com](https://www.datacamp.com/).
-This is a great way to learn *R*, because it is interactive, the lessons are of a high quality, and you do not need to install *R* before you start learning.
-As part of the homeworks 1 and 2, you will be asked to:
-
-- create a _paid_ account on data camp
-- Take several online courses (will be specified)
-- Turn in the certificate of completion
-
-If you follow the directions in the homeworks assigned, you will be able to complete all requirements on DataCamp while paying only for one month of a premium subscription, which costs $25.
-We will not require you to purchase any other textbooks or materials.
-If the cost is a problem, please contact us.
+**Lecture**|**Date**|**Assignments**|**Theme**|
+-----|-----|-----|-----|
+1|Wednesday, January 17, 2018| |Course outline & motivation
+2|Monday, January 22, 2018|HW0 due|Fundamentals of probability
+3|Wednesday, January 24, 2018| |Fundamentals of probability
+4|Monday, January 29, 2018| |Fundamentals of probability
+5|Wednesday, January 31, 2018| |Fundamentals of probability
+6|Monday, February 5, 2018| |Modeling toolbox
+7|Wednesday, February 7, 2018|HW1 due|Modeling toolbox
+8|Monday, February 12, 2018| |Modeling toolbox
+9|Wednesday, February 14, 2018| |Modeling toolbox
+10|Monday, February 19, 2018| |Modeling toolbox
+11|Wednesday, February 21, 2018|HW2 due|Modeling toolbox
+12|Monday, February 26, 2018| |Model checking & selection
+13|Wednesday, February 28, 2018| |Model checking & selection
+14|Monday, March 5, 2018| |Model checking & selection
+15|Wednesday, March 7, 2018|HW3 due|Model checking & selection
+16|Monday, March 12, 2018| |SPRING BREAK
+17|Wednesday, March 14, 2018| |SPRING BREAK
+18|Monday, March 19, 2018| |Model checking & selection
+19|Wednesday, March 21, 2018| |Model checking & selection
+20|Monday, March 26, 2018| |Special topics
+21|Wednesday, March 28, 2018|HW4 due|Special topics
+22|Monday, April 2, 2018| |Special topics
+23|Wednesday, April 4, 2018| |Special topics
+24|Monday, April 9, 2018| |Special topics
+25|Wednesday, April 11, 2018|HW5 due|Special topics
+26|Monday, April 16, 2018| |Special topics
+27|Wednesday, April 18, 2018| |Special topics
+28|Monday, April 23, 2018| |Special topics
+29|Wednesday, April 25, 2018| |Special topics
+30|Monday, April 30, 2018|Final project due|
+ |Final exam period (TBD)|Final project presentation|
+ |5/11/18|Take-home final exam due|
