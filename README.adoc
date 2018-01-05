@@ -197,7 +197,7 @@ The approximate schedule follows, but may change over the course of the semester
 .Approximate Course Schedule, 15% each column
 [width="60%", options="header"]
 |======
-*Lecture*|*Date*|*Assignments*|*Theme*|
+*Lecture*|*Date*|*Assignments*|*Theme*
 1|Wednesday, January 17, 2018| |Course outline & motivation
 2|Monday, January 22, 2018|HW0 due|Fundamentals of probability
 3|Wednesday, January 24, 2018| |Fundamentals of probability
