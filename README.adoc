@@ -10,6 +10,8 @@
 - Meetings: Monday and Wednesday, 2:40pm to 3:55pm in Mudd Building Room 633
 - Office Hours: TBD
 
+toc::[]
+
 ## Summary
 
 This course will provide students with an understanding of fundamental statistical concepts for understanding and modeling environmental data.
