@@ -196,7 +196,7 @@ The approximate schedule follows, but may change over the course of the semester
 
 .Approximate Course Schedule, 15% each column
 [width="60%", options="header",cols="4"]
- | ======
+| ======
 *Lecture* | *Date* | *Assignments* | *Theme*
 1 | Wednesday, January 17, 2018 |   | Course outline & motivation
 2 | Monday, January 22, 2018 | HW0 due | Fundamentals of probability
@@ -230,7 +230,7 @@ The approximate schedule follows, but may change over the course of the semester
 30 | Monday, April 30, 2018 | Final project due |  Special topics
 -  | Final exam period (TBD) | Final project presentation |  NA
 -  | 5/11/18 | Take-home final exam due |  NA
- | ======
+| ======
 
  ## Textbooks and References
 
