@@ -262,6 +262,5 @@ As part of the homeworks 1 and 2, you will be asked to:
 - Take several online courses (will be specified)
 - Turn in the certificate of completion
 
-If you follow the directions in the homeworks assigned, you will be able to complete all requirements on DataCamp while paying only for one month of a premium subscription, which costs $25.
-We will not require you to purchase any other textbooks or materials.
-If the cost is a problem, please contact us.
+Once the semester begins, we will provide you with a code for free access to Data Camp this semester -- you do not need to create your own premium (paid) account.
+Thanks to Data Camp for sponsoring this course!
